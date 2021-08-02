@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>WA Campsites</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="project_style.css">
+<style>
+</style>
+<body>
+
+<div id="map_temp">
+	<h1> Browse Campsites by Locations </h1>
+	<img src="map_temp.png" alt="temporary map before integration." width="500" height="350">
+</div>
+
+<div id="browse_sites">
+	<h1> Browse All Campsites </h1>
+</div>
+
+<div id="search_sites" align="center">
+	<h1> Search by Keyword or Filter</h1>
+	<form id="search_form">
+		<div id="search_bar" align="center">
+		<input type="text" placeholder="Search..." name="search">
+		</div>
+
+		<h2>Filter by Site Type</h2>
+
+		<input type="radio" id="NP" name="site_type" value="National Park">
+		<label for="NP">National Park</label><br>
+
+		<input type="radio" id="SP" name="site_type" value="State Park">
+		<label for="SP">State Park</label><br>
+
+		<input type="radio" id="Public" name="site_type" value="Public Land">
+		<label for="Public">Public Land</label><br>
+
+		<input type="radio" id="Private" name="site_type" value="Private Land">
+		<label for="Private">Private Land</label><br>
+
+
+		<h2>Filter by Site Feature</h2> 
+
+		<input type="radio" id="Mountains" name="site_type" value="Mountains">
+		<label for="Mountains">Mountains</label><br>
+
+		<input type="radio" id="Lake" name="site_type" value="Lake">
+		<label for="Lake">Lake</label><br>
+
+		<input type="radio" id="Ocean" name="site_type" value="Ocean">
+		<label for="Ocean">Ocean</label><br>
+
+		<input type="radio" id="Rain_Forest" name="site_type" value="Rain Forest">
+		<label for="Rain_Forest">Rain Forest</label><br>
+
+		<br>
+		<div id="submit_button" align="center">
+		<input type="submit" value="Search">
+		</div> 
+	</form>
+</div>
+
+</body>
+<script src="project_script.js"></script>
+</html>
