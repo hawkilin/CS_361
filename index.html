@@ -21,7 +21,7 @@
 	<h1> Search by Keyword or Filter</h1>
 	<form id="search_form">
 		<div id="search_bar" align="center">
-		<input type="text" placeholder="Search..." name="search">
+		<input type="text" id="text_search" placeholder="Search..." name="search">
 		</div>
 
 		<h2>Filter by Site Type</h2>
@@ -53,12 +53,19 @@
 		<input type="radio" id="Rain_Forest" name="site_type" value="Rain Forest">
 		<label for="Rain_Forest">Rain Forest</label><br>
 
-		<br>
 		<div id="submit_button" align="center">
-		<input type="submit" value="Search">
+		<button type="button" onclick="displayRadioValue()">
+		Search
+	</button>
 		</div> 
 	</form>
 </div>
+
+<div id="results">
+	<h1> Your search results will appear here. </h1>
+	<p> If no campsites are returned here that indicates </p>
+	<p>that your search term was not found in the list of Washington State Campsites</p>
+	</div>
 
 </body>
 <script src="project_script.js"></script>

@@ -59,10 +59,49 @@ var campsites = [{name: "Cougar Rock", location: "Mount Rainier National Park", 
                description: "Next to Lake Ozette. 15 sites, $20 fee, Season is year round. Website: https://www.nps.gov/olym/planyourvisit/camping.htm",
                coordinates: "48.152905953988714, -124.66657722879373"}]
 
+var locations = ["Mount Rainier National Park", "Olympic National Park"]
+
 
 var mainContainer = document.getElementById("browse_sites");
 for (let i = 0; i < campsites.length; i++) {
 	var div = document.createElement("div");
-	div.innerHTML = "Name: " + campsites[i].name + ", Location: " + campsites[i].location + ", Type: " + campsites[i].type + ", Feature: " + campsites[i].feature;
+	div.innerHTML = campsites[i].name + " at " + campsites[i].location + " featuring " + campsites[i].feature;
 	mainContainer.appendChild(div); 
+}
+
+//function displayRadioValue() {
+	//var ele = document.getElementsByName('site_type');
+	//for(i = 0; i < ele.length; i++) {
+		//if(ele[i].checked) {
+
+			//document.getElementById("results").innerHTML = "Your search results: " + ele[i].value;
+		//}
+	//}
+//}
+
+
+function displayRadioValue() {
+	var mainContainer = document.getElementById("results");
+	var ele = document.getElementsByName('site_type');
+	var search_term = document.getElementById('text_search').value;
+	for(i = 0; i < ele.length; i++) {
+		if(ele[i].checked) {
+			var my_type = ele[i].value;
+			for(i = 0; i < campsites.length; i++) {
+				if(campsites[i].type == my_type || campsites[i].feature == my_type) {
+					var div = document.createElement("div");
+					div.innerHTML = campsites[i].name + " at " + campsites[i].location + " featuring " + campsites[i].feature;
+					mainContainer.appendChild(div);
+
+				}
+			}
+		}
+	}
+	for(i = 0; i < campsites.length; i++) {
+		if(campsites[i].location == search_term) {
+			var div = document.createElement("div");
+			div.innerHTML = campsites[i].name + " at " + campsites[i].location + " featuring " + campsites[i].feature;
+			mainContainer.appendChild(div);
+		}
+	}
 }

@@ -13,7 +13,14 @@ h1 {
 #browse_sites {
 	position: absolute;
 	top: 450px;
-	left: 0px;
+	left: 75px;
+	text-align: center;
+}
+
+#results {
+	position: absolute;
+	top: 450px;
+	right: 75px;
 	text-align: center;
 }
 
@@ -22,7 +29,7 @@ h1 {
 	margin-right: 50px;
 	background: lightblue;
 	width: 50%;
-	height: 500px;
+	height: 420px;
 }
 
 
