@@ -57,9 +57,12 @@ var campsites = [{name: "Cougar Rock", location: "Mount Rainier National Park", 
               {name: "Queets", location: "Olympic National Park", type: "National Park",
                feature: "Lake",
                description: "Next to Lake Ozette. 15 sites, $20 fee, Season is year round. Website: https://www.nps.gov/olym/planyourvisit/camping.htm",
-               coordinates: "48.152905953988714, -124.66657722879373"}]
+               coordinates: "48.152905953988714, -124.66657722879373"},
+               {name: "29 Pines", location: "Kittitas County", type: "Public Land", feature: "Mountains", description: "No fee, currently closed.", coordinates: "47.401469090882884, -120.82949961837365"},
+               {name: "Bay Center Koa", location: "Bay Center, WA", type: "Private Land", feature: "Ocean", description: "Located on Willipa Bay, rates vary.", coordinates: "46.7010812166819, -123.98321999177026"},
+               {name: "Alta Lake", location: "Alta Lake State Park", type: "State Park", feature: "Lake", description: "93 campsites, $27 t0 $37, reserve at: https://washington.goingtocamp.com/ ", coordinates: "48.0763605633329, -119.94540279708727"}]
 
-var locations = ["Mount Rainier National Park", "Olympic National Park"]
+var locations = ["Mount Rainier National Park", "Olympic National Park", "Kittitas County", "Bay Center, WA", "Alta Lake State Park"]
 
 
 var mainContainer = document.getElementById("browse_sites");

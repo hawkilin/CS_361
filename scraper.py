@@ -1,13 +1,18 @@
 import requests
 from bs4 import BeautifulSoup
 
-response = requests.get(url="https://en.wikipedia.org/wiki/Graduate_Record_Examinations",)
+def wikipedia_scraper(wiki_page):
+    response = requests.get(url=f"https://en.wikipedia.org/wiki/{wiki_page}",)
+    soup = BeautifulSoup(response.content, 'html.parser')
+    title = soup.find(id="firstHeading")
+    print(title.string)
+    allp = soup.find(id="bodyContent").find_all("p")
+    print(allp[1].text)
 
-soup = BeautifulSoup(response.content, 'html.parser')
 
-title = soup.find(id="firstHeading")
-print(title.string)
+wikipedia_scraper("Science")
 
-allp = soup.find(id="bodyContent").find_all("p")
+wikipedia_scraper("Mathematics")
 
-print(allp[1].text)
+
+
