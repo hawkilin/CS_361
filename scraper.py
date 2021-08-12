@@ -10,9 +10,8 @@ def wikipedia_scraper(wiki_page):
     print(allp[1].text)
 
 
-wikipedia_scraper("Science")
+wikipedia_scraper("science")
 
-wikipedia_scraper("Mathematics")
 
 
 
