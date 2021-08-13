@@ -1,3 +1,41 @@
+#intro {
+	width: 60%;
+	text-align: center;
+	font-family: sans-serif;
+	background: #99DF99;
+	position: absolute;
+	left: 250px;
+}
+
+#rainier {
+	text-align: center;
+	font-family: sans-serif;
+	background: #99DF99;
+	width: 60%;
+	position: absolute;
+	left: 250px;
+}
+
+#cascades {
+	text-align: center;
+	font-family: sans-serif;
+	background: #99DF99;
+	width: 60%;
+	position: absolute;
+	left: 250px;
+	margin-top: 700px;
+}
+
+#olympic {
+	text-align: center;
+	font-family: sans-serif;
+	background: #99DF99;
+	width: 60%;
+	position: absolute;
+	left: 250px;
+	margin-top: 1400px;
+}
+
 #map_temp {
 	position: absolute;
 	top: 0px;
@@ -13,11 +51,31 @@ h1 {
 #browse_sites {
 	text-align: center;
 	font-family: sans-serif;
+	background: #99DF99;
+	width: 50%;
+	position: absolute;
+	left: 315px;
+	margin-top: 10px;
 }
 
 #results {
 	text-align: center;
 	font-family: sans-serif;
+	background: #99DF99;
+	width: 49.3%;
+	position: absolute;
+	left: 320px;
+	top: 775px;
+}
+
+#error {
+	text-align: center;
+	font-family: sans-serif;
+	background: #F14A19;
+	font-weight: bold;
+	width: 70%;
+	position: relative;
+	left: 100px;
 }
 
 #search_sites {
